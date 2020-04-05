@@ -1,3 +1,9 @@
+//Name: Brejanth Rajendran
+//StudentId: 100557484
+//Date: 2020/04/04
+// WEBD6201-W2020-Lesson10 was used as a starter
+//https://github.com/durhamprogrammer/WEBD6201-W2020-Lesson10
+
 class Contact
 {
     constructor(contactName = "", emailAddress = "", contactNumber = "", contactMessage = "")
@@ -11,8 +17,12 @@ class Contact
 
 //IIFE
 (function(){
-
-   
+    //doesnt work but was supposed to go to the about page
+    function AboutButton()
+    {
+    document.getElementById('aboutButton').onclick = function() {
+        }​;​
+    }
 
     function DisplayContactContent()
     {
@@ -144,6 +154,9 @@ class Contact
         {
             case 'contact':
                 DisplayContactContent();
+                break;
+            case 'home':
+                AboutButton();
                 break;
         }
     }

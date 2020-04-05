@@ -4,6 +4,7 @@ module.exports.displayHome = (res) =>
   res.render('index', 
     { 
       title: 'Home'
+      
     });
 }
 
@@ -14,7 +15,7 @@ module.exports.displayAbout = (res) =>
     title: 'About'
   });
 }
-//sadasdasdasd
+//projects module
 
 module.exports.displayProjects = (res) =>
 {
