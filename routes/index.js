@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 
-let controllers = require('../controllers/index');
+let controllers = require('../controllers/index'); 
 
 /* ROUTES SECTION */
 

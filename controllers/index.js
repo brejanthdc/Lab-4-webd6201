@@ -1,6 +1,6 @@
 /* CONTROLLERS SECTION */
 module.exports.displayHome = (res) =>
-{
+{ 
   res.render('index', 
     { 
       title: 'Home'
