@@ -20,7 +20,7 @@ router.get('/about', (req, res, next) =>
     controllers.displayAbout(res);
 });
 
-/* GET products page */
+/* GET projects page */
 router.get('/projects', (req, res, next) =>
   {
     controllers.displayProjects(res);
