@@ -1,0 +1,56 @@
+<!-- Main Content -->
+<div class="row">
+    <div class="offset-md-3 col-md-6 col-sm-12">
+          <div class="jumbotron" id="contentArea">
+              <h1 class="display-4">Contact Me.</h1>
+              <div id="errorMessage" class="alert alert-danger">
+                This is where the error message goes...
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="contactName">Full Name:</label>
+                  <input type="text" class="form-control" id="contactName" name="contactName"  required
+                  value="" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" required
+                  value="" placeholder="Enter your email address: name@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number:</label>
+                  <input type="tel" class="form-control" id="contactNumber" name="contactNumber"  required
+                  value="" placeholder="Enter your telephone number: (###) ###-####">
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Your Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="3" name="contactMessage"  required
+                  value="" placeholder="Enter Your Message Here..."
+                  ></textarea>
+                </div>
+                
+                <button id="resetButton" type="reset" class="btn btn-secondary">Reset</button>
+                <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <aside>
+          
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Flash</h5>
+            <p class="card-text">My Connections:</p>
+            
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEUZGRn///8AAAAXFxcUFBT5+fkNDQ3u7u4PDw8ICAjl5eXi4uIKCgrW1tb8/PzU1NTCwsIqKiovLy9cXFxhYWHx8fElJSUgICBFRUVZWVlycnKGhoaampqQkJCoqKhnZ2e1tbVJSUnLy8u6urp5eXk5OTl3d3ejo6OSkpI9PT1RUVFHR0eBgYH49P6/AAAQKUlEQVR4nO2ca5ejqhKGY2nUxEvu93RMTLpzmfz/33dAKATEhEx35vRei/fDObNtgzwCVUUBdjpOTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk7/dYGt4sZPA3o5DfTLfqgoRYWNAvweL7tRRnvlQv9VwGOSqRoMBtl217iW3NRqhADX+/Z8KUg1lIf6nQnXlKngmkBHKyFe70pS+H7zqZWBldscj0OicjAoyf8d97vtZhWY720n3HsGXaLGpUypXwy34wz/cgd4WiLVVG7FAFZl/af+B2j8VVF9UzHJJTDc26bgejcVsm5eOk2lbgqHTP7bbC09EoZerv84p/LWqXTXuFRv6d6bfRUS86vKP+wR4+nNVETRuDLcSy0AF/3Px7rnEMIWFTUhnJp/HoT6SG0jJNWxRgzXt27z99GmcWnkrcTzYdf8SSkeaUMIW9PfZ+NUrV07obe3RUzXX2Xz58OjfmW38W7YS83VE4+0IGz2AabuXDXYDwi9W9M0txBuz81fbxsjHGaCMF2ZHzlNbQl7E3Gpv9ucPo6iG/VVM/mI0LafpsW+Oeaaw/BCriAhyHZW6uJ9eEbI34EP+Kvsxp3cHa+onU8Q9gfEZSWqgbf0GWkxAENVtP+eQSYI4UtcHq5I5W6il/N+86AN+Q3oTraAPQ1iZCnkoSgI79zbr6UhVWiDtpWwDzNP00w3NKerVxMO+MXuisYXfigG1Y69/946qWKEEmszqJRl5aJ6677Pr2+k9gqw2ERxrUjIvQOJgWo/drbrpmmRQ8PUlJrP7sNREAYLBBwJ08Jvx5gAQzHeOboi4GLdKhjzEtQQgl+NHhHSSwKxtCX0mqZxqw3wSUD/9xDzHzDVTj7gjTJTH+nHSKg+MhiZCANLwg5grBFZEk69z9qyYeXVmGTA3gEjxPfRl6MY3gs6anwqCFWT8F1CESvYmZpw6k0DnVAzpUs2UjkhtyPyKEDqTyXsehNh0MF6fbbNSHTCDWhh9kwNVY/cenJC3klkS4Y9d6n4az98C2HtrVZWPp8QnnXzPlCDsjl/DifsN19gvGTXbv+GEC3jumdJeIQPlXCnzBt2wGPzP7H8BuUxh3VWA6mfJLzIhNgAdytTQwgz0MKwuxyL54BNzAm59+xJ1UYPZ9mG828SfhguPiSMIFYJFUPzAVihpUIoVxtZ2sah+sjvEvYwqNraEnqgBrhdeeoWAWBkzgm7vGllFv6KrqotTd9DGKJ321kTzkGZLGXyZGMNIkxeBq2E3IB//hPC+A+/aDdFpIQ3UOLQ/aD+dwK1g20nxEhu9B3CkS2hiPrsCU+Ab6XSXYrEb2HdgxVCZRxinRd2hBjZvkAoDzlhi4/WhBcAOUyTDE0JYW1nrwphIBN+smta1NZ7EyH+3p5wr5oaKc/2GUjRACfkLTyX2svv7Ic0r6mmIN5FiKPecpZPCUuQU5xJPdXYg+gRNaEhpiGz9kpq0W8jxDjanrAPcm5vX08X/UDOqnFC/tBbM8mv6RcRdgEHEtVGGJot1BmVmpCHdJOnYe8vIvQ6gUQiDM2MAMqzDE7Im/h52NtG6P/7cUiiFah9oDA0JLBV1g044VD89f9EKPrAC4RFKkIzr4+GhkziQ2X2zwmPWJNnM2xf5Gm069gG3/WHLxB+QE+03BHdQ9HrqDkqZj1TzDQ+jQrfRogxzQuEOxC/8j74/C+DuiiZUDSiNpP4d4QiLrX3+PRliNQANiaZ0WsLMJwwCHkAlDx5wLsIxdh5gZC0V50aED3ABzXlhj5eGNgnM9B3EYr5oX3kTUvFdFnEJ9DjoANa5ltEMSJjOXqY7HoXoZjjWxLSJs9DH9NlJRtl1IzoS8yCML7yK4OHj2glxKz+3xLi4LGcAU9Y5dHJsHW1nLiCVF+AGosWE77l9OgZP0moZGdLw8VnhKsQTQ0bhjR511jOqAl9tEvd+EE/bSXEqOtvCdEo2i3mM0LSFjxWqRqOLkDIoapO2OmhU3xkzt5EWOe8H/YgjZB0c7ZGxtbVvsC0Z0QirNcIV+3h6ZsI63nQ8+C/JiRWKazyvtW6GnV0fnPdVLac4kU+CN7eRViaKvSMcAC8Pmda5CSVTLKZsHYl7cP9PYS9A9ZnZtVJOWEfncNXzlce9dWaxisTD7+2BW+thJiA/htCWIiKWe43YYRdHHjU0HySKvcM2xfmCmHIV2O03WB/Tzh/TOj7fpACrOuJ7J+nWQaJkGbJaL/r3vmrkeaLLYS14920IP4kIXHufmc8lXfB2O424YRknkBDdrquRpOeuFz2iNDHrFsemEf8TxI2lc+t7IwgXKdVoL3LWI83bi9caEUC9uSWt9lKGP4E4dqyCZGwCmIy78SWwjBb/ZiwttsTo1N8K6FdTFoRTsUPSMMVbFCZN64tdM8nFiDMTvGdhK3mralgVBVCPQSZ992Zj2nuITIS1k7TuJLXSog95Dtt+GWNmK6rDDANY4Jlsq9yhD3D/lkjYV2DsWHYv5XQfhySOdJuyOODeMd6N2TGMjtNQuEUTTPFnyA07oJmepYmkgi9/Z4tlgXLKmEYH8xFGghrp2h4pc8JFfVeJHyWJpIJveOZTeADJSNqQyicor4dwYZwqOoBYXdSFMX66749Ssh2m034TH64XYuZiLCQNoS1U2ya76eERpkJoZemvWpH4EqEbY9zKBphlW3jq2PhdJAYtn57nm+cJ4mZYmNctBL2/oKwvoRJoka5DwkHqzC83zcMIaTnY5bF5nzMIjmfaCYUM8XGuHgPoZTFtYvbaJI+m0DYocnReuXaj1M2/se39WVfJrNWwnqmqK/V/Chh/WyR8ra0pmkRTYFuwqPra3HTWgQx2w8bXIu2ItBp6RH4mwg7Ivtgl8XoLIBtMoTjcNjSSlW14tZeL9KnWgT+NkK0p5YbvesfthyY4q0YXtt/ienTifLIp4TKwbHB4AFhrhC+tjfxgQI2FBe3ry2xOS3egqHwzIJqbJ4SasfuHhHK+wSF9T7ZEQbN83wBG3rj6WY3lBxHex/GEyKzFwmVhz6K2vJUJsSIxC5fGvyZxiRikisfHNbb46CZiWonNLP8JKHcDGJ6bre/lC6VJbv12FSCNaEwb8pIfpFw8Ygw/ntCvhgnD1rfPD18SMj78uJNhMoesxf3CLO54EBZ5ADz/BAJQ+j1tDO9+E6UaeKvItyqcXPzFI1EGE7v63VRKIgtW8FaCEWftif0v0lYJszwpjGrt7ybrUHIQxglS4phzfVdhJ2/J6wi7wsL8dL1mi8lGVNRKqFSPGYFDnKk+DZCDDDsCcuM7byH5OAt+AG1prMQhOypijPCFPlvJfxgxZJnFDk/xNlrnIXSCb/kgOLthItvEZImZMtNG287wDNvhmOSSMiXw02E6nzm1xB+8BQEqeZwhwtZeOLOQDhrJ1SPI/wkobz+jJbGLmpLi0HGDCOdrEcn8UN9N01N2DUQckvz+W8J7c49FbTN6SmwCqla6r4xRD0bqxKq45DfO34X4dxE+GVF6FeF0AKqnlatYrBT8aH+sQUkZLkb1VtEzYq8n9BufhhTjmp3STXwNlWRzKDqEbjahspSBe6AS5XQ9XcQVucp6EoOG3d8d2llUJVN3p5uaeSdNLj3Rts70EqYv0w4+iYhXdhmxiLhJ8+ZcVW/zqH6Q+UcMF+DSv4NIfYtuzxNRXgB8QBMYVfDTF2i4XEFXpSsClbk+GsJya3oHMQeDGpQY2XnFxIepWZmVzCK3byNcGwinNoT0s2k3GeL86P5KJbCB5kQl0WnrC5xvblIW0V8FyHmaaZ2u75WVRXEckx9BpgaVGW6zwnrLX2bKmF1FZNJfen5JUL/dULLfW2rykCICCar93ZXK9/SziGM7+tQYFbuh1JcUGi27d2ElqfVV2wjOzZdVzolU21fqKf7SGjaL0XVWO16jbDziFAOB8Wk4PnRq4pwQp13vWdT+QbWHeTVRDFHM3+eJV/QhVwzoXKw7SlhffcTQrpK9rQdKeG6J4XZyvcUViBN9wWhb1x8vsF9u1WC4frbJpcskzzJE0Ios4xb5ceEh7ifRE9dBiX8DCTHd5ZrTw2qYZ4dBA3E/Aa0EOWLKjXhTokQnhFGYi+iePbVRLikSbungQ0lBHFWiqhUumAEgfgslJRJCPSYtVz0KoczbCVM3kBIl8ufTjAIYR/k7bKRmoQaiB3gSq7Eh4OUcSxXwCcnpjb0ALb9vvQXY+Tti4/cQNbv88MqIl0k77QUxm8ZZ1lWPBuIhLAEZa+l9g2+HQRB3iCkjn6xOWZRf7A/ddhw9+ej0Vy+Bz6OVBfN0hDXtKfSI6BLdfWkWJptOSyp5KgtXdNSh8PhPLC0NGdQdl/oXxkkfn1jIORfvqT2E5/uB4F6C5iOB7de56WZ7lS/N5gqH2WyIDypCYuLvhFjwo96t64f/m4Rj39QpxBDfc9XPoaDTKj42VC83TiWFohicVMQy6dOetLl+g9+LJdS3x3Il+V7XnnXpA1TdYtQv7G4FrHT7JxwsZJqHBZL/l/BbTVZYMeD24R3rPiwmoiPgnV89JfB52S1mnAv11tMP/kti9XqBujhggO6wfi2In/As3OicEvCrn7woHkOIas+/8EIg6VsA2GGO+Yh7yc4fYJhNJixVVdIZkmO95DXyQPM3qbf7fbZ7aQbDXnahxSeJCLehAzP/8Gsn/R5zADHKOum9q0YTjN9K2Lzu5feni64GQiDcS6+JZh/woF9DyQ+EAcx2PKM3RpAHD/diQ+PEh+547YGkg3cck6YE9eCcxQoxd2zJVomMrUh/qRt97yJsDjqp2NMqzIf5DUYCImFj7gzpoRTFmTDZUACtZITfhFC3pUhuosZFuxxCk1eQMxfQkV4Sh4Szkks+cpndsPiorfZ3hR1TkZGwmyyR+dMOhKJMqp/nofEw7B6QjbcZhm+/hmIfSOCkAQzxLHl1UQhuHrbc35qEkakl274utjaS272TdgJ1yvddibGqcPiPG4Q+uCdSz5pgu6tc2FTH5Vwv8MJEXxE2xy/tFsTxt4oALaoQwhPkcjEym04WYwWvMYA91c2C8WTxtGKruGDpvVudUqIfSQtotOd/yfkyx7vjnBPyGgail7a5aYDst1piHMMqZfmh7THMqK0lxaRifDW49FEWJxJlGm587Kq8Gdz2Bl36mPoTAkx8oAjsRZ99j4hv8KXV+0KIUNlCTMWEkNywuYkA24Oh26TcDiESx9E4REG0zCobekNx2G88gi69Td26S9GY10LpjnRqFJ19cp6SXCd9aMIzcgqhDPfHJ5EUb/gKF/i3BWUZPYZVa4sntJ0SYRW54yntYJO5kXsfFhwjaC3FrZ0iCYTsoiUzkvc0m8qv+LzSTSpyaenqJri9wdSTEnjXvFvIvGd4DrqpNf459zDKgcrToRLw1l88J1+qLtXpymlf0klWoekTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5O/wn9D2CZBNuKMdzhAAAAAElFTkSuQmCC" alt="Italian Trulli">
+            <p></p><a herf="https://www.facebook.com/pages/category/Company/STAR-Labs-910918428971496/">StarLabs</a></p>
+
+            
+          </div>
+        </div>
+      </aside>
+    </div>
+</div>
